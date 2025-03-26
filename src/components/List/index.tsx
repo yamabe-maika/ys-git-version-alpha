@@ -29,30 +29,48 @@ const StyledButtonWrapper = styled.div`
 `;
 
 type Props = {
-  setTodoList: React.Dispatch<React.SetStateAction<TodoList[]>>,
+  getData: () => Promise<void>
   todoList: TodoList[]
 }
 
 export const List: React.FC<Props> = ({
-  setTodoList,
+  getData,
   todoList
 }) => {
-  const completedTodoItem = (id: string) => {
-    const updateList = todoList.map((data) => {
-      if(data.id === id) {
-        return {
-          ...data,
-          isCompleted: !data.isCompleted
-        }
-      }
-      return data;
+  const completedTodoItem = async(item: TodoList) => {
+    const res = await fetch(`http://localhost:3000/tasks/${item.id}`, {
+      method: "PUT",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        ...item,
+        isCompleted: !item.isCompleted
+      })
     })
-    setTodoList(updateList);
+
+    if(!res.ok) {
+      throw new Error();
+    }
+
+    await getData();
   }
 
-  const deleteTodoItem = (id: string) => {
-    const updateList = todoList.filter((data) => data.id !== id);
-    setTodoList(updateList);
+  const deleteTodoItem = async(id: string) => {
+    const res = await fetch(`http://localhost:3000/tasks/${id}`, {
+      method: "DELETE",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+
+    if(!res.ok) {
+      throw new Error();
+    }
+
+    await getData();
   }
 
   return (
@@ -88,7 +106,7 @@ export const List: React.FC<Props> = ({
               </Button>
               <Button
                 type="button"
-                onClick={() => completedTodoItem(item.id)}
+                onClick={() => completedTodoItem(item)}
                 variant="contained"
                 size="small"
                 sx={{
