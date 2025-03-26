@@ -29,16 +29,11 @@ const StyledButtonWrapper = styled.div`
 `;
 
 type Props = {
-<<<<<<< HEAD
   getData: () => Promise<void>
-=======
-  setTodoList: React.Dispatch<React.SetStateAction<TodoList[]>>,
->>>>>>> develop
   todoList: TodoList[]
 }
 
 export const List: React.FC<Props> = ({
-<<<<<<< HEAD
   getData,
   todoList
 }) => {
@@ -76,27 +71,6 @@ export const List: React.FC<Props> = ({
     }
 
     await getData();
-=======
-  setTodoList,
-  todoList
-}) => {
-  const completedTodoItem = (id: string) => {
-    const updateList = todoList.map((data) => {
-      if(data.id === id) {
-        return {
-          ...data,
-          isCompleted: !data.isCompleted
-        }
-      }
-      return data;
-    })
-    setTodoList(updateList);
-  }
-
-  const deleteTodoItem = (id: string) => {
-    const updateList = todoList.filter((data) => data.id !== id);
-    setTodoList(updateList);
->>>>>>> develop
   }
 
   return (
@@ -132,11 +106,7 @@ export const List: React.FC<Props> = ({
               </Button>
               <Button
                 type="button"
-<<<<<<< HEAD
                 onClick={() => completedTodoItem(item)}
-=======
-                onClick={() => completedTodoItem(item.id)}
->>>>>>> develop
                 variant="contained"
                 size="small"
                 sx={{
