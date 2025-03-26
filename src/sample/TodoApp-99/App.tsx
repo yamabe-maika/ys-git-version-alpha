@@ -2,7 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
-// TODO: pathが異なる場合があります。適宜修正してください。
 import { InputForm } from "./components/InputForm";
 import { List } from "./components/List";
 

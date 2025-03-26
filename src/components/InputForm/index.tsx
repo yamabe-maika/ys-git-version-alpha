@@ -2,6 +2,11 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Button, TextField } from "@mui/material";
 
+<<<<<<< HEAD
+=======
+import type { TodoList } from "~/sample/TodoApp-02/App";
+
+>>>>>>> develop
 const StyledForm = styled.form`
   display: flex;
   justify-content: space-between;
@@ -12,6 +17,7 @@ const StyledForm = styled.form`
 `;
 
 type Props = {
+<<<<<<< HEAD
   getData: () => Promise<void>
 };
 
@@ -45,6 +51,30 @@ export const InputForm: React.FC<Props> = ({
     }
 
     await getData();
+=======
+  setTodoList: React.Dispatch<React.SetStateAction<TodoList[]>>,
+  todoList: TodoList[]
+};
+
+export const InputForm: React.FC<Props> = ({
+  setTodoList,
+  todoList
+}) => {
+  const [content, setContent] = React.useState("");
+
+  const addTodoItem = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    setContent('');
+    setTodoList([
+      ...todoList,
+      {
+        id: crypto.randomUUID(),
+        content,
+        isCompleted: false
+      }
+    ]);
+>>>>>>> develop
   }
 
   return (
@@ -81,4 +111,8 @@ export const InputForm: React.FC<Props> = ({
       </Button>
     </StyledForm>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> develop

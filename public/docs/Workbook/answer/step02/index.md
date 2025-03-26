@@ -2,15 +2,17 @@
 
 各Stepごとに答えを記載します。
 
-### step. 01
+<br>
 
-答え
+### 01. 現在のブランチを確認・チェックアウト
+
+#### 答え
 
 ```
 % git branch
 ```
 
-実行結果
+#### 実行結果
 
 ```
   develop
@@ -21,29 +23,35 @@
 
 feature/create-todo-app をチェックアウトしていない場合は以下のコマンドを実行してください。
 
+#### 答え
+
 ```
 % git checkout feature/create-todo-app
 ```
 
-実行結果
+#### 実行結果
 
 ```
 Switched to branch 'feature/create-todo-app'
 ```
 
-### step. 02
+<br>
+
+### 02. アプリ作成 (貼り付け作業)
 
 問題内容の通りにファイルを更新してください。
 
-### step. 03
+<br>
 
-答え
+### 03. 作業ディレクトリの状態を確認
+
+#### 答え
 
 ```
 % git status
 ```
 
-実行結果
+#### 実行結果
 
 ```
 On branch feature/create-todo-app
@@ -55,37 +63,35 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-### step. 04
+<br>
 
-#### パターン01
+### 04. ステージングエリアに追加
 
-答え
+以下のコマンドは色々なオプションが存在します。  
+全てを紹介するとキリがないので、全てのファイルをステージングエリアに追加する方法のみ紹介します。  
+他の方法を確認したい場合は、「git add オプション」と調べてみてください。
 
-```
-% git add src/App.tsx
-```
-
-実行結果は特に表示されません。
-
-#### パターン02
-
-答え
+#### 答え
 
 ```
 % git add .
 ```
 
-実行結果は特に表示されません。
+#### 実行結果
 
-### step. 05
+実行しても何もログは表示されません。
 
-答え
+<br>
+
+### 05. ステージングエリアの状態を確認
+
+#### 答え
 
 ```
 % git status
 ```
 
-実行結果
+#### 実行結果
 
 ```
 On branch feature/create-todo-app
@@ -94,43 +100,55 @@ Changes to be committed:
         modified:   src/App.tsx
 ```
 
-### step. 06
+<br>
 
-答え
+### 06. メッセージ付きコミットを実行
+
+#### 答え
 
 ```
 % git commit -m "ここに任意のコミットメッセージを入力します"
+
+(例)
+% git commit -m "feat: Todoアプリ"
 ```
 
-実行結果  
-※ 表示される内容が多少異なることがございます。
+#### 実行結果
+
+表示される内容は異なります。  
+以下に似た実行結果が返ってきていれば、問題ありません。
 
 ```
-[feature/create-todo-app <コミットIDが表示されます>] <入力されたコミットメッセージが表示されます>
- 1 file changed, 173 insertions(+), 4 deletions(-)
+[feature/create-todo-app a64c858] feat: Todoアプリ
+ 1 file changed, 179 insertions(+), 10 deletions(-)
+ rewrite src/App.tsx (76%)
 ```
 
-### step. 07
+<br>
 
-答え
+### 07. ステージングエリアの状態を確認
+
+#### 答え
 
 ```
 % git status
 ```
 
-実行結果
+#### 実行結果
 
 ```
 On branch feature/create-todo-app
 nothing to commit, working tree clean
 ```
 
-### step. 08
+<br>
 
-答え
+### 08. リモートリポジトリにプッシュ
+
+#### 答え
 
 ```
-git push origin feature/create-todo-app
+% git push origin feature/create-todo-app
 ```
 
 または
@@ -139,28 +157,29 @@ git push origin feature/create-todo-app
 git push origin HEAD
 ```
 
-実行結果  
-※ 表示される内容が多少異なることがございます。
+#### 実行結果
+
+表示される内容は異なります。  
+以下に似た実行結果が返ってきていれば、問題ありません。
 
 ```
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
-Delta compression using up to 8 threads
+Delta compression using up to 4 threads
 Compressing objects: 100% (4/4), done.
-Writing objects: 100% (4/4), 1.62 KiB | 1.62 MiB/s, done.
-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Writing objects: 100% (4/4), 1.63 KiB | 1.63 MiB/s, done.
+Total 4 (delta 2), reused 1 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-remote: This repository moved. Please use the new location:
-remote:   git@github.com:ys-nkjm/ys-git-version-alpha.git
 remote: 
 remote: Create a pull request for 'feature/create-todo-app' on GitHub by visiting:
-remote:      https://github.com/ys-nkjm/ys-git-version-alpha/pull/new/feature/create-todo-app
+remote:      https://github.com/toku-chan/ys-git-version-alpha/pull/new/feature/create-todo-app
 remote: 
-To github.com:ys-nkjm/ys-git-version-alpha
- * [new branch]      HEAD -> feature/create-todo-app
+To github.com:toku-chan/ys-git-version-alpha.git
+ * [new branch]      feature/create-todo-app -> feature/create-todo-app
 ```
 
+<br>
 
-## practice
+## 練習問題
 
-[練習問題](/public/docs/Workbook/practice/step02/index.md) へ戻る
+[練習問題 - コミット・プッシュ](/public/docs/Workbook/practice/step02/index.md) へ戻る

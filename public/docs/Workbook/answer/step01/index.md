@@ -2,55 +2,64 @@
 
 各Stepごとに答えを記載します。
 
-### step. 01
+<br>
 
-答え
+### 01. 現在のブランチを確認
+
+#### 答え
 
 ```
 % git branch
 ```
 
-実行結果
+#### 実行結果
 
 ```
 * main
 ```
 
+<br>
 
-### step. 02
+### 02. 指定のブランチをチェックアウト
 
-答え
+#### 答え
 
 ```
 % git checkout develop
 ```
 
-実行結果
+#### 実行結果
 
 ```
 branch 'develop' set up to track 'origin/develop'.
 Switched to a new branch 'develop'
 ```
 
-### step. 03
+<br>
 
-答え
+### 03. 新規ブランチを作成
+
+#### 答え
 
 ```
-% git branch feature/add-list-item
+% git branch feature/create-components
 ```
 
-こちらは実行しても何もログは表示されません。  
+#### 実行結果
 
-### step. 04
+実行しても何もログは表示されません。
 
-答え
+<br>
+
+### 04. 新規ブランチが作成されたことを確認
+
+#### 答え
 
 ```
 % git branch
 ```
 
-実行結果
+#### 実行結果
 
 ```
 * develop
@@ -58,30 +67,33 @@ Switched to a new branch 'develop'
   main
 ```
 
+<br>
 
-### step. 05
+### 05. 新規ブランチ作成しながら、チェックアウトする
 
-答え
+#### 答え
 
 ```
 % git checkout -b feature/create-todo-app
 ```
 
-実行結果
+#### 実行結果
 
 ```
 Switched to a new branch 'feature/create-todo-app'
 ```
 
-### step. 06
+<br>
 
-答え
+### 06. 新規ブランチが作成・チェックアウトができていることを確認
+
+#### 答え
 
 ```
 % git branch
 ```
 
-実行結果
+#### 実行結果
 
 ```
   develop
@@ -90,6 +102,8 @@ Switched to a new branch 'feature/create-todo-app'
   main
 ```
 
-## Practice
+<br>
 
-[練習問題](/public/docs/Workbook/practice/step01/index.md) へ戻る
+## 練習問題
+
+[練習問題 - ブランチ作成・ブランチ切り替え](/public/docs/Workbook/practice/step01/index.md) へ戻る

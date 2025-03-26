@@ -2,62 +2,106 @@
 
 各Stepごとに答えを記載します。
 
-### step. 01
-pushした後すぐにプルリクエストを作る時は、画像赤枠のボタンをクリックしてください。
+<br>
 
-![プルリクエスト作成画面](/public/images/workbook/step03/answer/image-01.png)
+### 01. プルリクエスト作成画面を開く
 
-### step. 02
-#### マージ先を develop に変更、プルリクエスト作成完了まで行ってください。
+1. Github で Fork したリポジトリを開いてください。
+2. 開けたら、Pull requests タブを選択してください。 (画像赤枠)
 
-画像の赤枠のボタンをクリックして、develop ブランチを指定してください。
+![Pull requests](/public/images/workbook/step03/answer/image01.png)
 
-![ブランチ変更](/public/images/workbook/step03/answer/image-02.png)
+3. New pull request ボタンをクリックしてください。(画像赤枠)
 
-#### Github で新規プルリクエストを Draft 状態で作成してください。
+![New pull request](/public/images/workbook/step03/answer/image02.png)
 
-画像赤枠の ▼ ボタンをクリックして、Create draft pull request をクリックしてください。
+<br>
 
-![Draft で作成](/public/images/workbook/step03/answer/image-03.png)
+### 02. プルリクエストを作成する
 
-Draftで作成されていることは、画像赤枠の表示から判断できます。
+#### マージ先を変更
 
-![Draft 状態を確認](/public/images/workbook/step03/answer/image-04.png)
+1. 対象のリポジトリを、自身のリポジトリに切り替えてください。  
+デフォルトでは、Fork 元のリポジトリが選択されています。  
+**Fork したリポジトリ限定の作業になります。**
 
-### step. 03
-Draft から Open に切り替えるには画像赤枠の、Ready for review ボタンをクリックしてください。
+![change repository](/public/images/workbook/step03/answer/image03.png)
 
-![Draft から Open に変更](/public/images/workbook/step03/answer/image-05.png)
+2. 比較対象のブランチを feature/create-todo-app に変更してください。
 
-プルリクエスト画面の Draft が Open に変わっていると思います。
+![compose branch](/public/images/workbook/step03/answer/image04.png)
 
-![Draft から Open に変更](/public/images/workbook/step03/answer/image-06.png)
+3. マージ先のブランチを develop に変更してください。
 
+![base branch](/public/images/workbook/step03/answer/image05.png)
 
-### step. 04
+4. ① が比較したときのコード差分になります。  
+前のstep で src/App.tsx だけの変更したので、それ以外に差分がなければ、② Create pull request ボタンをクリックしてください。
 
-プルリクエストをマージするには、画像赤枠の Merge pull request ボタンをクリックしてください。
+![base branch](/public/images/workbook/step03/answer/image06.png)
 
-![Merge pull request](/public/images/workbook/step03/answer/image-07.png)
+#### 実装の内容を記載する
 
-次に Confirm merge ボタンをクリックしてください。
+画像赤枠の部分を埋めてください。
 
-![Confirm merge](/public/images/workbook/step03/answer/image-08.png)
+![title, description](/public/images/workbook/step03/answer/image07.png)
 
-マージが完了後、画面に Merge を表す表現が出ているか確認してください。
+#### Draft 状態で作成
 
-![正常に Merge されている](/public/images/workbook/step03/answer/image-09.png)
+1. 画像赤枠の ▼ ボタンをクリックして、Create draft pull request をクリックしてください。
 
-###  step. 05
+![Draft で作成](/public/images/workbook/step03/answer/image08.png)
 
-マージ後、不要ブランチを削除するには、Delete branch ボタンをクリックしてください。
+2. Draft pull request ボタンをクリックして、プルリクエストを作成します。
 
-![Delete branch](/public/images/workbook/step03/answer/image-10.png)
+![Draft 状態を確認](/public/images/workbook/step03/answer/image09.png)
 
-画像赤枠のような表現が出ているか確認してください。
+3. 画像赤枠の箇所で、プルリクエストが Draft 状態であることを確認できます。
 
-![ブランチを消したことのメッセージ](/public/images/workbook/step03/answer/image-11.png)
+![Draft 状態の確認](/public/images/workbook/step03/answer/image10.png)
 
-## practice
+<br>
 
-[練習問題](/public/docs/Workbook/practice/step03/index.md) へ戻る
+### 03. プルリクエストを Open 状態にする
+
+1. Draft から Open に切り替えるには、Ready for review ボタンをクリックしてください。
+
+![Draft 状態の確認](/public/images/workbook/step03/answer/image11.png)
+
+2. 画像赤枠部分の表示がされていれば、Open 状態にプルリクエストが変更したことが確認できます。
+
+![Draft から Open](/public/images/workbook/step03/answer/image12.png)
+
+<br>
+
+### 04. マージ
+
+1. プルリクエストをマージするには、画像赤枠の Merge pull request ボタンをクリックしてください。
+
+![Merge pull request](/public/images/workbook/step03/answer/image13.png)
+
+2. 次に Confirm merge ボタンをクリックしてください。
+
+![Confirm merge](/public/images/workbook/step03/answer/image14.png)
+
+3. マージが完了後、画像赤枠部分の表示がされていれば、マージが完了しています。
+
+![正常に Merge されている](/public/images/workbook/step03/answer/image15.png)
+
+<br>
+
+### 05. マージして不要になったリモートブランチを削除する
+
+1. マージ後、不要ブランチを削除するには、Delete branch ボタンをクリックしてください。
+
+![Delete branch](/public/images/workbook/step03/answer/image16.png)
+
+2. 画像赤枠部分の表示がされていれば、リモートのブランチは正常に削除されています。
+
+![ブランチを消したことのメッセージ](/public/images/workbook/step03/answer/image17.png)
+
+<br>
+
+## 練習問題
+
+[練習問題 - Github でプルリクエストの作成・マージ](/public/docs/Workbook/practice/step03/index.md) へ戻る

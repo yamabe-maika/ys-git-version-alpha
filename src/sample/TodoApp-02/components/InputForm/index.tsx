@@ -2,7 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Button, TextField } from "@mui/material";
 
-// TODO: pathが異なる場合があります。適宜修正してください。
 import type { TodoList } from "~/sample/TodoApp-02/App";
 
 const StyledForm = styled.form`

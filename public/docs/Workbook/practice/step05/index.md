@@ -2,71 +2,118 @@
 
 今までの復習を兼ねて、以下のことを行なってください。
 
-### step. 01
-feature/create-components ブランチをチェックアウトしているか確認してください。  
-していない場合、feature/create-components ブランチに切り替えてください。
+<br>
 
-### step. 02
+### 01. チェックアウトしているブランチを確認
+
+feature/create-components ブランチをチェックアウトしているか確認してください。
+
+していない場合のみ以下の作業を行なってください。  
+feature/create-components ブランチをチェックアウトしてください。
+
+<br>
+
+### 02. アプリ内容を更新 (貼り付け作業)
+
 Todoアプリを更新します。  
-1. [sample/TodoApp-02](/src/sample/TodoApp-02/App.tsx) の内容を [src/App.tsx](/src/App.tsx) に貼り付けてください。  
-2. [sample/TodoApp-02/components](/src/sample/TodoApp-02/components/) の中身を [src/components](/src/components/) の中に反映してください。  
-**過去のstepで作成した内容を上書きして問題ありません。**  
-内容は深く理解しなくて大丈夫ですが、TODO コメントがある箇所は修正してください。
+**過去のstepで作成した内容を上書きしてください。**
 
-### step. 03
-変更したファイルが作業ディレクトリにあることを確認してください。
+1. [sample/TodoApp-02](/src/sample/TodoApp-02/App.tsx) の内容を [src/App.tsx](/src/App.tsx) に貼り付けてください。
+2. [sample/TodoApp-02/components](/src/sample/TodoApp-02/components/) の中身を [src/components](/src/components/) の中に反映してください。
 
-### step. 04
-変更した全てのファイルをステージングエリアに追加してください。
+<br>
 
-### step. 05
-全てのファイルがステージングエリアに移動したことを確認してください。
+### 03. 作業ディレクトリの状態を確認
 
-### step. 06
+変更したファイルが、作業ディレクトリにあることを確認してください。
+
+<br>
+
+### 04. ステージングエリアに追加
+
+変更した全てのファイルを、ステージングエリアに追加してください。
+
+<br>
+
+### 05. ステージングエリアの状態を確認
+
+変更した全てのファイルが、ステージングエリアに移動したことを確認してください。
+
+<br>
+
+### 06. メッセージ付きコミットを実行
+
 任意のコミットメッセージを入力して、コミットしてください。
 
-### step. 07
-ステージングエリアに変更した全てのファイルがないことを確認してください。
+<br>
 
-### step. 08
+### 07. ステージングエリアの状態を確認
+
+変更した全てのファイルが、ステージングエリアにないことを確認してください。
+
+<br>
+
+### 08. リモートリポジトリにプッシュ
+
 リモートリポジトリにプッシュしてください。
 
-### step. 09
-1. マージ先を develop ブランチにしてください。
-2. Open 状態でプルリクエストを作成してください。
+<br>
 
-#### Fork したリポジトリは、プルリクエストを作成する際に、リポジトリも選択します。
-自身のリポジトリを選択してください。  
-万が一間違えても、問題はありません。落ち着いてやり直してみましょう。
+### 09. Open 状態でプルリクエストを作成
 
-![リポジトリを変更](/public/images/workbook/step03/practice/image-01.png)
+2度目なので、要点だけ記載しています。  
+見返したい時は、 [step03](/public/docs/Workbook/answer/step03/index.md) を確認してください。
 
-### step. 10
+- リポジトリの変更をする。
+- 比較対象のブランチの変更をする。
+- マージ先のブランチは develop にする。
+- プルリクエストは Open で作成する。Draft とならないように。
+
+<br>
+
+### 10. マージ
+
 Github の画面で、develop ブランチにマージしてください。
 
-### step. 11
+<br>
+
+### 11. マージして不要になったリモートブランチを削除する
+
 マージされた作業ブランチは不要なため、削除してください。
 
-### step. 12
-ローカルでマージして不要となった feature/create-components ブランチを削除してください。
+<br>
 
-### step. 13
+### 12. 最新のリモートリポジトリをローカルリポジトリに取り込む
+
 develop ブランチを最新の状態にしてください。
 
+<br>
 
-## Previous Practice
+### 13. ローカルリポジトリで不要になったブランチを削除
+
+マージして不要となった feature/create-todo-app ブランチを削除してください。  
+またブランチが消えていることを確認してください。
+
+<br>
+
+## 前へ
 
 ← [最新の変更を取り込む](/public/docs/Workbook/practice/step04/index.md)
 
-## Next Practice
+<br>
+
+## 次へ
 
 [コンフリクトの解消](/public/docs/Workbook/practice/step06/) →
 
-## answer
+<br>
+
+## 答え
 
 答えは[こちら](/public/docs/Workbook/answer/step05/index.md)を確認してください。
 
 各 step の内容の繰り返しでもあります。以下は各 step の答えになります。
+
 1. [ブランチ作成・ブランチ切り替え](/public/docs/Workbook/answer/step01/index.md)
 2. [コミット・プッシュ](/public/docs/Workbook/answer/step02/index.md)
 3. [Github でプルリクエストの作成・マージ](/public/docs/Workbook/answer/step03/index.md)

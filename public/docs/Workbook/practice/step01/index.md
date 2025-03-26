@@ -2,29 +2,51 @@
 
 以下のことをやってみましょう。
 
-### step. 01
+<br>
+
+### 01. 現在のブランチを確認
+
 main ブランチをチェックアウトしていることを確認してください。
 
-### step. 02
+<br>
+
+### 02. 指定のブランチをチェックアウト
+
 develop ブランチをチェックアウトしてください。
 
-### step. 03
-develop ブランチから feature/create-components を作成してください。  
-この時作成したブランチにはチェックアウトしないでください。
+<br>
 
-### step. 04
+### 03. 新規ブランチを作成
+
+develop ブランチから feature/create-components を作成してください。  
+**※ 新規ブランチを作成だけしてください。チェックアウトはしないでください。**
+
+<br>
+
+### 04. 新規ブランチが作成されたことを確認
+
 feature/create-components が作成できたことを確認してください。
 
-### step. 05
+<br>
+
+### 05. 新規ブランチ作成しながら、チェックアウトする
+
 再度 develop ブランチから feature/create-todo-app を作成して同時にチェックアウトしてください。
 
-### step. 06
+<br>
+
+### 06. 新規ブランチが作成・チェックアウトができていることを確認
+
 feature/create-todo-app が作成でき、チェックアウトしていることを確認してください。
 
-## Next Workbook
+<br>
+
+## 次へ
 
 [コミット・プッシュ](/public/docs/Workbook/practice/step02/index.md) →
 
-## answer
+<br>
 
-答えは[こちら](/public/docs/training/answer/step01/index.md)を確認してください。
+## 答え
+
+答えは[こちら](/public/docs/Workbook/answer/step01/index.md)を確認してください。

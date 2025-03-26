@@ -1,21 +1,31 @@
-<!-- TODO: fizz-buzzのままなので、画像を更新する -->
-## リポジトリを Fork する
+## リポジトリを自身の Github に Fork をする
 
-### step. 01
-リポジトリをForkしてください。
-![step01-fork](/public/images/fork/step01-fork.png)
+### リポジトリの　Fork
 
-### step. 02
-好きな Repository name を入力してください。(そのままでもOK)
+画像赤枠のボタンから、リポジトリの Fork を行います。
 
-### step. 03
-Copy the main branch only のチェックを外してください。
+![Fork を実行](/public/images/fork/image01.png)
 
-### step. 04
-create fork を実行してください。
-![step02-fork](/public/images/fork/step02-fork.png)
+<br>
 
-### step. 05
-少し待つと、Fork が完了します。  
-branch タブをクリックし、main ブランチと develop ブランチがあることを確認してください。
-![step03-fork](/public/images/fork/step03-fork.png)
+### Fork をするためのリポジトリ設定
+
+1. リポジトリ名は特に変更しないで進めてください。（変更してもこの後の作業に影響はありません）
+2. `Copy the main branch only` のチェックを外してください。
+3. `create fork` のボタンをクリックし、Fork を開始してください。
+
+![Fork を実行](/public/images/fork/image02.png)
+
+<br>
+
+### 正しく Fork ができているか確認
+
+Fork が完了しましたら、画像赤枠の `Branches` を選択してください。
+
+![Branches を選択](/public/images/fork/image03.png)
+
+<br>
+
+以下のブランチが存在していれば、問題なく Fork ができています。
+
+![Branch の確認](/public/images/fork/image04.png)

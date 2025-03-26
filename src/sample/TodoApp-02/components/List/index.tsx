@@ -6,7 +6,6 @@ import {
   Typography
 } from "@mui/material";
 
-// TODO: pathが異なる場合があります。適宜修正してください。
 import type { TodoList } from "~/sample/TodoApp-02/App";
 
 const StyledList = styled.ul`
